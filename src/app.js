@@ -13,6 +13,8 @@ import adminRoutes from "#routes/dashboard.routes.js"
 
 const app = express();
 
+app.set('trust proxy', 1);
+
 app.use(helmet());
 
 app.use(cors({
